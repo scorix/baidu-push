@@ -136,9 +136,9 @@ module Baidu
       def messages=(msg = {})
         message = {}
         message[:title] = msg[:title].to_s
+        message[:description] = msg[:description].to_s
         case device_type
           when 3
-            message[:description] = msg[:description].to_s
             message[:custom_content] = msg[:custom_content]
           when 4
             message[:aps] = msg[:aps]
