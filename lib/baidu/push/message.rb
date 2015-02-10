@@ -116,8 +116,8 @@ module Baidu
 
       # optional
       # 部署状态。指定应用当前的部署状态，可取值：
-      #   1：开发状态
-      #   2：生产状态(default)
+      #   1：开发状态 (default for the gem)
+      #   2：生产状态 (default at baidu)
       # Notice: ios only
       attribute :deploy_status, Integer, default: ->(_, _) { 1 }
 
